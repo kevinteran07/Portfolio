@@ -3,6 +3,9 @@ import Head from 'next/head'
 import type { NextPage } from 'next';
 
 import NavBar from "../../components/ui/Navbar";
+import Card from '../../components/ui/Card';
+
+const projectTitles: string[] = ['Personal Portolio', 'Book ListLink', 'Music Rating']
 
 const ProjectPage: NextPage = () => {
     return (
@@ -12,7 +15,11 @@ const ProjectPage: NextPage = () => {
                 <meta name="description" content="Kevin Teran's Personal Portfolio"/>    
             </Head>
             <NavBar />
-            <h1>Hello This is the Projects Page</h1>  
+            <div className="h-56 grid grid-cols-3 content-evenly">
+                <Card title={projectTitles[0]}/>
+                <Card title={projectTitles[1]}/>
+                <Card title={projectTitles[2]}/>
+            </div>
         </Fragment>        
     )
 };
