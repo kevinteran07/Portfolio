@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 
 import NavBar from "../../components/ui/Navbar";
 import Card from '../../components/ui/Card';
+import Footer from '../../components/ui/Footer';
 
 const projectTitles: string[] = ['Personal Portolio', 'Book ListLink', 'Music Rating']
 
@@ -20,6 +21,7 @@ const ProjectPage: NextPage = () => {
                 <Card title={projectTitles[1]}/>
                 <Card title={projectTitles[2]}/>
             </div>
+            <Footer />
         </Fragment>        
     )
 };
